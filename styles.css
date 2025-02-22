@@ -69,9 +69,10 @@ section span {
 }
 
 section span:hover {
-  background-color: red;
-  transition: background-color 0s;
-}
+    background-color: red;
+    transition: background-color 0s;
+  }
+  
 
 @keyframes border-pulse {
   0% {
@@ -133,111 +134,4 @@ section span:hover {
   margin-top: 60px;
   width: 100%;
   position: relative;
-}
-
-.tasks-container {
-  margin-top: 20px;
-  max-height: 300px;
-  overflow-y: auto;
-}
-
-.tasks-container::-webkit-scrollbar {
-  width: 5px;
-}
-
-.tasks-container::-webkit-scrollbar-track {
-  background: #181818;
-}
-
-.tasks-container::-webkit-scrollbar-thumb {
-  background: red;
-  border-radius: 5px;
-}
-
-#tasksList {
-  list-style: none;
-  padding: 0;
-}
-
-.task-item {
-  background: rgba(255, 255, 255, 0.1);
-  margin: 8px 0;
-  padding: 12px 15px;
-  border-radius: 8px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: all 0.3s ease;
-}
-
-.task-item:hover {
-  background: rgba(255, 255, 255, 0.15);
-}
-
-.task-text {
-  color: #fff;
-  flex-grow: 1;
-  margin-right: 15px;
-}
-
-.task-actions {
-  display: flex;
-  gap: 8px;
-}
-
-.task-actions button {
-  border: none;
-  background: none;
-  color: #fff;
-  cursor: pointer;
-  padding: 5px;
-  border-radius: 4px;
-  transition: all 0.3s ease;
-}
-
-.complete-btn:hover {
-  background: rgba(0, 255, 0, 0.2);
-}
-
-.delete-btn:hover {
-  background: rgba(255, 0, 0, 0.2);
-}
-
-.task-item.completed .task-text {
-  text-decoration: line-through;
-  opacity: 0.7;
-}
-
-#taskInput {
-  background: rgba(255, 255, 255, 0.1);
-  border: none;
-  padding: 10px 15px;
-  border-radius: 8px;
-  color: #fff;
-  font-size: 16px;
-  width: 100%;
-}
-
-#taskInput::placeholder {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-#taskInput:focus {
-  outline: none;
-  background: rgba(255, 255, 255, 0.15);
-}
-
-#addTask {
-  background: red;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  min-width: 100px;
-}
-
-#addTask:hover {
-  background: darkred;
 }

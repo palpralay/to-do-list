@@ -11,6 +11,7 @@
     letter-spacing: 2.5px;
     text-align: center;
     text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif, Verdana;
     text-decoration: none;
     -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
             box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
@@ -183,6 +184,7 @@
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif, Verdana;
     -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
             box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
   }

@@ -1,13 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
-  let section = document.getElementById("background-effect"); 
+  let section = document.getElementById("background-effect");
 
-  for (let i = 0; i < 600; i++) { 
-      let span = document.createElement("span");
-      section.appendChild(span);
+  for (let i = 0; i < 600; i++) {
+    let span = document.createElement("span");
+    section.appendChild(span);
   }
 });
-
-
 
 document.querySelector(".animated-button1").onclick = function () {
   if (document.querySelector(".new-task input").value.length === 0) {
@@ -22,4 +20,18 @@ document.querySelector(".animated-button1").onclick = function () {
         </div>
         `;
   }
+  //text decoration line through
+  document.querySelectorAll(".task-item").forEach((item) => {
+    item.addEventListener("click", function () {
+      this.style.textDecoration = "line-through";
+    });
+  });
+  //delete button
+  document.querySelectorAll(".delete-btn").forEach((btn) => {
+    btn.addEventListener("click", function () {
+      this.parentElement.remove();
+    });
+  });
+  //clear inputfield
+  document.querySelector(".new-task input").value = "";
 };
